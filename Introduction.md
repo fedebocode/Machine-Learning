@@ -1,8 +1,8 @@
 # Introduction
 
-[Lecture 1](/Introduction/Assets/Introduction_Lecture1.pdf)
+[Lecture 1 PDF](/Introduction/Assets/Introduction_Lecture1.pdf)
 
---
+---
 
 
 ### Machine Learning
@@ -58,4 +58,5 @@ Clustering: Take a collection of 1,000,000 different genes, and find a way to au
 Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
 
 
-
+#### References
+Andrew Ng, Machine Learning, Stanford University, 2018
