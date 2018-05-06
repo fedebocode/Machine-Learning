@@ -1,0 +1,326 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ModelRepresentation.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="Introduction.html">
+            
+                <a href="Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="ModelRepresentation.html">
+            
+                <a href="ModelRepresentation.html">
+            
+                    
+                    Model Representation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="ModelRepresentation/ModelCostFunction.html">
+            
+                <a href="ModelRepresentation/ModelCostFunction.html">
+            
+                    
+                    Model and Cost Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="ModelRepresentation/ParameterLearning.html">
+            
+                <a href="ModelRepresentation/ParameterLearning.html">
+            
+                    
+                    Parameter Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Introduction</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction">Introduction</h1>
+<p><a href="Introduction/Assets/Introduction_Lecture1.pdf">Lecture 1 PDF</a></p>
+<hr>
+<h3 id="machine-learning">Machine Learning</h3>
+<p>Two definitions of Machine Learning are offered. Arthur Samuel described it as: <em>&quot;the field of study that gives computers the ability to learn without being explicitly programmed.&quot;</em> This is an older, informal definition.</p>
+<p>Tom Mitchell provides a more modern definition: <em>&quot;A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.&quot;</em></p>
+<p> <em>Example:</em> playing checkers.</p>
+<p><strong>E</strong> = the experience of playing many games of checkers</p>
+<p><strong>T</strong> = the task of playing checkers.</p>
+<p><strong>P</strong> = the probability that the program will win the next game.</p>
+<p>In general, any machine learning problem can be assigned to one of two broad classifications:</p>
+<p>Supervised learning and Unsupervised learning.</p>
+<h3 id="supervised-learning">Supervised Learning</h3>
+<p>In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.</p>
+<p>Supervised learning problems are categorized into <em>regression</em> and <em>classification</em> problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.</p>
+<p><em>Example 1:</em></p>
+<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.</p>
+<p>We could turn this example into a classification problem by instead making our output about whether the house &quot;sells for more or less than the asking price.&quot; Here we are classifying the houses based on price into two discrete categories.</p>
+<p> <em>Example 2:</em></p>
+<p>(a) Regression - Given a picture of a person, we have to predict their age on the basis of the given picture</p>
+<p>(b) Classification - Given a patient with a tumor, we have to predict whether the tumor is malignant or benign.</p>
+<h3 id="unsupervised-learning">Unsupervised Learning</h3>
+<p>Unsupervised learning allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don&apos;t necessarily know the effect of the variables.</p>
+<p>We can derive this structure by clustering the data based on relationships among the variables in the data.</p>
+<p>With unsupervised learning there is no feedback based on the prediction results.</p>
+<p><em>Example:</em></p>
+<p>Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.</p>
+<p>Non-clustering: The &quot;Cocktail Party Algorithm&quot;, allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Machine Learning">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ModelRepresentation.html" class="navigation navigation-next " aria-label="Next page: Model Representation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"2.1","depth":1,"next":{"title":"Model Representation","level":"2.2","depth":1,"path":"Week_1/ModelRepresentation.md","ref":"Week_1/ModelRepresentation.md","articles":[{"title":"Model and Cost Function","level":"2.2.1","depth":2,"path":"Week_1/ModelRepresentation/ModelCostFunction.md","ref":"Week_1/ModelRepresentation/ModelCostFunction.md","articles":[]},{"title":"Parameter Learning","level":"2.2.2","depth":2,"path":"Week_1/ModelRepresentation/ParameterLearning.md","ref":"Week_1/ModelRepresentation/ParameterLearning.md","articles":[]}]},"previous":{"title":"Machine Learning","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week_1/Introduction.md","mtime":"2018-05-05T10:32:16.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-06T09:53:38.617Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

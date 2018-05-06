@@ -1,0 +1,325 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Model and Cost Function · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ParameterLearning.html" />
+    
+    
+    <link rel="prev" href="../ModelRepresentation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ModelRepresentation.html">
+            
+                <a href="../ModelRepresentation.html">
+            
+                    
+                    Model Representation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.2.1" data-path="ModelCostFunction.html">
+            
+                <a href="ModelCostFunction.html">
+            
+                    
+                    Model and Cost Function
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="ParameterLearning.html">
+            
+                <a href="ParameterLearning.html">
+            
+                    
+                    Parameter Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Model and Cost Function</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="model-representation">Model Representation</h3>
+<p>To establish notation for future use, we&#x2019;ll use 
+x(i) to denote the &#x201C;input&#x201D; variables (living area in this example), also called input features, and y(i) to denote the &#x201C;output&#x201D; or target variable that we are trying to predict (price). A pair (x(i),y(i)); i = 1,...,m is called a training example, and the dataset that we&#x2019;ll be using to learn&#x2014;a list of m training examples (x(i),y(i));i=1,...,m&#x2014;is called a training set. Note that the superscript &#x201C;(i)&#x201D; in the notation is simply an index into the training set, and has nothing to do with exponentiation. We will also use X to denote the space of input values, and Y to denote the space of output values. 
+In this example, X = Y = &#x211D;.</p>
+<p>To describe the supervised learning problem slightly more formally, our goal is, given a training set, to learn a function h : X &#x2192; Y so that h(x) is a &#x201C;good&#x201D; predictor for the corresponding value of y. For historical reasons, this function h is called a hypothesis. Seen pictorially, the process is therefore like this:</p>
+<p><img src="Assets/1.png" alt="alt text"></p>
+<h3 id="cost-function">Cost Function</h3>
+<p>We can measure the accuracy of our hypothesis function by using a cost function. This takes an average difference (actually a fancier version of an average) of all the results of the hypothesis with inputs from x&apos;s and the actual output y&apos;s.</p>
+<p><img src="Assets/2.png" alt="alt text"></p>
+<p>This function is otherwise called the &quot;Squared error function&quot;, or &quot;Mean squared error&quot;. The mean is halved (1/2) as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the 1/2 term.</p>
+<h3 id="cost-function---intuition-i">Cost Function - Intuition I</h3>
+<p>If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make a straight line (defined by h&#x3B8;(x) which passes through these scattered data points.</p>
+<p>Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. Ideally, the line should pass through all the points of our training data set. In such a case, the value of J(&#x3B8;0,&#x3B8;1) will be 0. The following example shows the ideal situation where we have a cost function of 0.</p>
+<p><img src="Assets/3.png" alt="alt text"></p>
+<p>When &#x3B8;1 = 1, we get a slope of 1 which goes through every single data point in our model. Conversely, when &#x3B8;1 = 0.5, we see the vertical distance from our fit to the data points increase.</p>
+<p><img src="Assets/4.png" alt="alt text"></p>
+<p>This increases our cost function to 0.58. Plotting several other points yields to the following graph:</p>
+<p><img src="Assets/5.png" alt="alt text"></p>
+<p>Thus as a goal, we should try to minimize the cost function. In this case, &#x3B8;1 = 1 is our global minimum.</p>
+<h3 id="cost-function---intuition-ii">Cost Function - Intuition II</h3>
+<p>A contour plot is a graph that contains many contour lines. A contour line of a two variable function has a constant value at all points of the same line. An example of such a graph is the one to the right below.</p>
+<p><img src="Assets/6.png" alt="alt text"></p>
+<p>Taking any color and going along the &apos;circle&apos;, one would expect to get the same value of the cost function. For example, the three green points found on the green line above have the same value for J(&#x3B8;0,&#x3B8;1) and as a result, they are found along the same line. The circled x displays the value of the cost function for the graph on the left when &#x3B8;0 = 800 and &#x3B8;1 = -0.15. Taking another h(x) and plotting its contour plot, one gets the following graphs:</p>
+<p><img src="Assets/7.png" alt="alt text"></p>
+<p>When &#x3B8;0 = 360 and &#x3B8;1 = 0, the value of J(&#x3B8;0,&#x3B8;1) in the contour plot gets closer to the center thus reducing the cost function error. Now giving our hypothesis function a slightly positive slope results in a better fit of the data.</p>
+<p><img src="Assets/8.png" alt="alt text"></p>
+<p>The graph above minimizes the cost function as much as possible and consequently, the result of &#x3B8;1 and &#x3B8;0 tend to be around 0.12 and 250 respectively. Plotting those values on our graph to the right seems to put our point in the center of the inner most &apos;circle&apos;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ModelRepresentation.html" class="navigation navigation-prev " aria-label="Previous page: Model Representation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ParameterLearning.html" class="navigation navigation-next " aria-label="Next page: Parameter Learning">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Model and Cost Function","level":"2.2.1","depth":2,"next":{"title":"Parameter Learning","level":"2.2.2","depth":2,"path":"Week_1/ModelRepresentation/ParameterLearning.md","ref":"Week_1/ModelRepresentation/ParameterLearning.md","articles":[]},"previous":{"title":"Model Representation","level":"2.2","depth":1,"path":"Week_1/ModelRepresentation.md","ref":"Week_1/ModelRepresentation.md","articles":[{"title":"Model and Cost Function","level":"2.2.1","depth":2,"path":"Week_1/ModelRepresentation/ModelCostFunction.md","ref":"Week_1/ModelRepresentation/ModelCostFunction.md","articles":[]},{"title":"Parameter Learning","level":"2.2.2","depth":2,"path":"Week_1/ModelRepresentation/ParameterLearning.md","ref":"Week_1/ModelRepresentation/ParameterLearning.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Week_1/ModelRepresentation/ModelCostFunction.md","mtime":"2018-05-06T10:07:45.499Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-06T09:53:38.617Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,23 +1,23 @@
 # Introduction
 
-[Lecture 1 PDF](/Introduction/Assets/Introduction_Lecture1.pdf)
+[Lecture 1 PDF](/Week_1/Introduction/Assets/Introduction_Lecture1.pdf)
 
 ---
 
 
 ### Machine Learning
 
-Two definitions of Machine Learning are offered. Arthur Samuel described it as: "the field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.
+Two definitions of Machine Learning are offered. Arthur Samuel described it as: _"the field of study that gives computers the ability to learn without being explicitly programmed."_ This is an older, informal definition.
 
-Tom Mitchell provides a more modern definition: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."
+Tom Mitchell provides a more modern definition: _"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."_
 
- * Example: playing checkers.
+ _Example:_ playing checkers.
 
-E = the experience of playing many games of checkers
+__E__ = the experience of playing many games of checkers
 
-T = the task of playing checkers.
+__T__ = the task of playing checkers.
 
-P = the probability that the program will win the next game.
+__P__ = the probability that the program will win the next game.
 
 In general, any machine learning problem can be assigned to one of two broad classifications:
 
@@ -30,13 +30,13 @@ In supervised learning, we are given a data set and already know what our correc
 
 Supervised learning problems are categorized into _regression_ and _classification_ problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.
 
- * Example 1:
+_Example 1:_
 
 Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.
 
 We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two discrete categories.
 
- * Example 2:
+ _Example 2:_
 
 (a) Regression - Given a picture of a person, we have to predict their age on the basis of the given picture
 
@@ -51,12 +51,8 @@ We can derive this structure by clustering the data based on relationships among
 
 With unsupervised learning there is no feedback based on the prediction results.
 
- * Example:
+_Example:_
 
 Clustering: Take a collection of 1,000,000 different genes, and find a way to automatically group these genes into groups that are somehow similar or related by different variables, such as lifespan, location, roles, and so on.
 
 Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
-
-
-#### References
-Andrew Ng, Machine Learning, Stanford University, 2018
