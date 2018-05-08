@@ -17,3 +17,4 @@
 
 * [Multi Variate Linear Regression](/Week_2/MultiVariateLinearRegression.md)
 	* [Multiple Features](/Week_2/MultiVariateLinearRegression/MultipleFeatures.md)
+	* [Computing Parameters Analytically](/Week_2/ComputingParametersAnalytically/ComputingParametersAnalytically.md)

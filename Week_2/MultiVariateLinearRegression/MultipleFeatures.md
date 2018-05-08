@@ -44,7 +44,7 @@ We can speed up gradient descent by having each of our input values in roughly t
 
 The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:
 
-−1 ≤ _x(i_ ≤ 1
+−1 ≤ _x(i)_ ≤ 1
 
 or
 
@@ -64,6 +64,26 @@ Note that dividing by the range, or dividing by the standard deviation, give dif
 For example, if _xi_ represents housing prices with a range of 100 to 2000 and a mean value of 1000, then, 
 
 _xi := (price − 1000) / 1900_
+
+Example:
+
+![alt text](/Week_2/MultiVariateLinearRegression/Assets/Example.png)
+
+So for any individual feature f:
+
+	f_norm = (f - f_mean) / (f_max - f_min)
+
+	e.g. for x2,(midterm exam)^2 = {7921, 5184, 8836, 4761}
+
+	> x2 <- c(7921, 5184, 8836, 4761)
+	> mean(x2)
+ 	6676
+	> max(x2) - min(x2)
+ 	4075
+	>(x2 - mean(x2)) / (max(x2) - min(x2))
+ 	0.306  -0.366  0.530 -0.470
+
+ Hence __norm(5184) = 0.366__
 
 ### Gradient Descent in Practice II - Learning Rate
 
