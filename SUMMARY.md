@@ -19,3 +19,4 @@
 	* [Multiple Features](/Week_2/MultiVariateLinearRegression/MultipleFeatures.md)
 	* [Computing Parameters Analytically](/Week_2/ComputingParametersAnalytically/ComputingParametersAnalytically.md)
 	* [Octave/Matlab Tutorials](Week_2/Octave_MatlabTutorials/Octave_MatlabTutorials.md)
+	* [Solving Linear Regression](Week_2/Octave_MatlabTutorials/LinearRegression_Example.md)
