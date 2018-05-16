@@ -20,3 +20,6 @@
 	* [Computing Parameters Analytically](/Week_2/ComputingParametersAnalytically/ComputingParametersAnalytically.md)
 	* [Octave/Matlab Tutorials](Week_2/Octave_MatlabTutorials/Octave_MatlabTutorials.md)
 	* [Solving Linear Regression](Week_2/Octave_MatlabTutorials/LinearRegression_Example.md)
+
+* [Classification](/Week_3/ClassificationAndRepresentation.md)
+	* [Classification And Representation](/Week_3/ClassificationAndRepresentation/Classification.md)
