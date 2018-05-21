@@ -44,3 +44,51 @@ The λ, or lambda, is the __regularization parameter__. It determines how much t
 Using the above cost function with the extra summation, we can smooth the output of our hypothesis function to reduce overfitting. If lambda is chosen to be too large, it may smooth out the function too much and cause underfitting. Hence, what would happen if λ = 0 or is too small ?
 
 ![alt text](/Week_3/OverfittingProblem/Assets/4.png)
+
+# Regularized Linear Regression
+
+We can apply regularization to both linear regression and logistic regression. We will approach linear regression first.
+
+__Gradient Descent__
+
+We will modify our gradient descent function to separate out _θ0_ from the rest of the parameters because we do not want to penalize _θ0_.
+
+![alt text](/Week_3/OverfittingProblem/Assets/5.png)
+
+The term _(λ\m) * θj_ performs our regularization. With some manipulation our update rule can also be represented as:
+
+![alt text](/Week_3/OverfittingProblem/Assets/6.png)
+
+The first term in the above equation, 1 − α * (λ\m) will always be less than 1. Intuitively you can see it as reducing the value of _θj_ by some amount on every update. Notice that the second term is now exactly the same as it was before.
+
+__Normal Equation__
+
+Now let's approach regularization using the alternate method of the non-iterative normal equation.
+
+To add in regularization, the equation is the same as our original, except that we add another term inside the parentheses:
+
+![alt text](/Week_3/OverfittingProblem/Assets/7.png)
+
+_L_ is a matrix with _0_ at the top left and 1's down the diagonal, with _0's_ everywhere else. It should have dimension _(n+1)×(n+1)_. Intuitively, this is the identity matrix (though we are not including _x0_), multiplied with a single real number λ.
+
+Recall that if _m < n_, then _X'T_ is non-invertible. However, when we add the term _λ⋅L_, then _X'X + λ⋅L_ becomes invertible.
+
+# Regularized Logistic Regression
+
+We can regularize logistic regression in a similar way that we regularize linear regression. As a result, we can avoid overfitting. The following image shows how the regularized function, displayed by the pink line, is less likely to overfit than the non-regularized function represented by the blue line:
+
+![alt text](/Week_3/OverfittingProblem/Assets/8.png)
+
+__Cost Function__
+
+Recall that our cost function for logistic regression was:
+
+![alt text](/Week_3/OverfittingProblem/Assets/9.png)
+
+We can regularize this equation by adding a term to the end:
+
+![alt text](/Week_3/OverfittingProblem/Assets/10.png)
+
+The second sum, means to explicitly exclude the bias term, _θ0_. I.e. the _θ_ vector is indexed from _0_ to _n_ (holding n+1 values, _θ0_ through _θn_), and this sum explicitly skips _θ0_ , by running from 1 to _n_, skipping _0_. Thus, when computing the equation, we should continuously update the two following equations:
+
+![alt text](/Week_3/OverfittingProblem/Assets/11.png)
