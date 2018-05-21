@@ -89,7 +89,6 @@ Syntax for a "while" loop:
 		end
 	end
 
-
 __Advanced__:
 
 	addpath('C:\Users\Federico\Documents')		// Add a search path for Octave to refer
@@ -106,7 +105,7 @@ Create a file for example called CostFunction.m in your directory which contains
 	m = size(X,1);							% Number of training examples
 	predictions = X * theta;				% Predictions of hypothesis on all m
 	squaredErrors = (predictions - y).^2;	% Squared errors 
-
+	
 	J = 1/(2 * m) * sum(squaredErrors);
 
 Now in Octave, define the variables and call the function:
@@ -114,7 +113,5 @@ Now in Octave, define the variables and call the function:
 	X = [1 1; 1 2; 1 3];
 	y = [1; 2; 3]
 	theta = [0; 1]
-
+	
 	J = CostFunction(X,y,theta)
-
-

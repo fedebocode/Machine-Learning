@@ -55,5 +55,3 @@ Example:
 In this case, our decision boundary is a straight vertical line placed on the graph where _x1 = 5_, and everything to the left of that denotes _y = 1_, while everything to the right denotes _y = 0_.
 
 Again, the input to the sigmoid function _g(z)_ doesn't need to be linear, and could be a function that describes a circle or any shape to fit our data.
-
-

@@ -1,5 +1,7 @@
 # Classification and Representation 
 
-[Lecture 3 Regularization](/Week_3/ClassificationAndRepresentation/Assets/Regularization.pdf)
+[Lecture: Logistic Regression](/Week_3/LogisticRegression/Assets/Regularization.pdf)
+
+[Lecture: Regularization](/Week_3/OverfittingProblem/Assets/Regularization.pdf)
 
 

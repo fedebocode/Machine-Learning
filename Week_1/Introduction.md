@@ -1,6 +1,6 @@
 # Introduction
 
-[Lecture 1 PDF](/Week_1/Introduction/Assets/Introduction_Lecture1.pdf)
+[Lecture: Introduction](/Week_1/Introduction/Assets/Introduction_Lecture1.pdf)
 
 ---
 
