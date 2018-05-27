@@ -1,5 +1,7 @@
 # Linear Regression Example
 
+In this exercise, you will implement linear regression with one variable to predict profits for a food truck. Suppose you are the CEO of a restaurant franchise and are considering different cities for opening a new outlet. The chain already has trucks in various cities and you have data for profits and populations from the cities. You would like to use this data to help you select which city to expand to next.
+
 The objective of linear regression is to minimize the cost function:
 
 ![alt text](/Week_2/Octave_MatlabTutorials/Assets/1.png)
@@ -50,8 +52,8 @@ __Cost Function__
 
 		m = length(y); 
 
-		predictions = X * theta;
-		squaredErrors = (predictions - y).^2;
+		h = X * theta;
+		squaredErrors = (h - y).^2;
 
 		J = 1/(2 * m) * sum(squaredErrors);
 
@@ -82,7 +84,6 @@ __Gradient Descent__
 	disp(min(J_history));
 
 	end
-
 
 ### Plot the Cost Function J(theta0,theta1)
 

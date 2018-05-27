@@ -19,7 +19,7 @@
 	* [Multiple Features](/Week_2/MultiVariateLinearRegression/MultipleFeatures.md)
 	* [Computing Parameters Analytically](/Week_2/ComputingParametersAnalytically/ComputingParametersAnalytically.md)
 	* [Octave/Matlab Tutorials](Week_2/Octave_MatlabTutorials/Octave_MatlabTutorials.md)
-	* [Solving Linear Regression](Week_2/Octave_MatlabTutorials/LinearRegression_Example.md)
+	* [Solving Univariate Linear Regression](Week_2/Octave_MatlabTutorials/LinearRegression_Example.md)
 	* [Solving Multivariate Linear Regression](Week_2/Octave_MatlabTutorials/MultivariateLinearRegression_Example.md)
 
 ---	
@@ -28,3 +28,5 @@
 	* [Classification And Representation](/Week_3/ClassificationAndRepresentation/Classification.md)
 	* [Logistic Regression](/Week_3/LogisticRegression/LogisticRegression.md)
 	* [Solving the Problem of Overfitting](/Week_3/OverfittingProblem/OverfittingProblem.md)
+	* [Solving Logistic Regression](/Week_3/Octave_MatlabTutorials/LogisticRegression_Example.md)
+	* [Solving Regularized Logistic Regression](/Week_3/Octave_MatlabTutorials/RegularizedLogisticRegression_Example.md)

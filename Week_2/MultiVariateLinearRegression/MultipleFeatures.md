@@ -26,7 +26,7 @@ Remark: Note that for convenience reasons in this course we assume _x0(i) = 1 fo
 
 ### Gradient Descent For Multiple Variables
 
-he gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
+The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:
 
 ![alt text](/Week_2/MultiVariateLinearRegression/Assets/2.png)
 
