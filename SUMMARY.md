@@ -30,3 +30,9 @@
 	* [Solving the Problem of Overfitting](/Week_3/OverfittingProblem/OverfittingProblem.md)
 	* [Solving Logistic Regression](/Week_3/Octave_MatlabTutorials/LogisticRegression_Example.md)
 	* [Solving Regularized Logistic Regression](/Week_3/Octave_MatlabTutorials/RegularizedLogisticRegression_Example.md)
+
+---
+
+* [Neural Networks](/Week_4/NeuralNetworks.md)
+	* [Neural Networks Representation](/Week_4/NeuralNetworks/NeuralNetworksRepresentation.md)
+	* [Neural Networks Applications](/Week_4/NeuralNetworks/NeuralNetworksApplications.md)
