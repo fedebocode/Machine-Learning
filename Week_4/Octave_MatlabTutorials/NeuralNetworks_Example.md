@@ -1,8 +1,8 @@
 # One-vs-All Classification Example
 
-In the previous part of this exercise, you implemented multi-class logistic re- gression to recognize handwritten digits. However, logistic regression cannot form more complex hypotheses as it is only a linear classifier.
+In the previous part of this exercise, you implemented multiclass logistic regression to recognize handwritten digits. However, logistic regression cannot form more complex hypotheses as it is only a linear classifier.
 
-You will implement a neural network to rec- ognize handwritten digits using the same training set as before. The neural network will be able to represent complex models that form non-linear hy- potheses. You will be using parameters from a neural network that has been already trained. Your goal is to implement the feedforward propagation algorithm to use our weights for prediction.
+You will implement a neural network to recognize handwritten digits using the same training set as before. The neural network will be able to represent complex models that form non-linear hypotheses. You will be using parameters from a neural network that has been already trained. Your goal is to implement the feedforward propagation algorithm to use our weights for prediction.
 
 Our neural network is shown in the image below:
 

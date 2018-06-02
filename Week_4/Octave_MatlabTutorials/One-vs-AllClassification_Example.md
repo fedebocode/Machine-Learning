@@ -2,7 +2,7 @@
 
 In this exercise, you will implement One-vs-All logistic regression to recognize hand-written digits.
 Automated handwritten digit recognition is widely used today, from recognizing zip codes (postal codes) on mail envelopes to recognizing amounts written on bank checks.
-You will extend your previous implemen- tion of logistic regression and apply it to one-vs-all classification.
+You will extend your previous implemen- tion of logistic regression and apply it to One-vs-All classification.
 
 You are given a data set in _ex3data1.mat_ that contains 5000 training examples of handwritten digits.
 
