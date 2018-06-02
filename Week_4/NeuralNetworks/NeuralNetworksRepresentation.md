@@ -27,7 +27,7 @@ The values for each of the "activation" nodes is obtained as follows:
 
 This is saying that we compute our activation nodes by using a 3×4 matrix of parameters. We apply each row of the parameters to our inputs to obtain the value for one activation node. Our hypothesis output is the logistic function applied to the sum of the values of our activation nodes, which have been multiplied by yet another parameter matrix _Θ(2)_ containing the weights for our second layer of nodes.
 
-Each layer gets its own matrix of weights, _Θ(j)Θ_.
+Each layer gets its own matrix of weights, _Θ(j)_.
 
 The dimensions of these matrices of weights is determined as follows:
 
