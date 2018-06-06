@@ -33,8 +33,15 @@
 
 ---
 
-* [Neural Networks](/Week_4/NeuralNetworks.md)
-	* [Neural Networks Representation](/Week_4/NeuralNetworks/NeuralNetworksRepresentation.md)
-	* [Neural Networks Applications](/Week_4/NeuralNetworks/NeuralNetworksApplications.md)
+* [Neural Networks: Representation](/Week_4/NeuralNetworksRepresentation.md)
+	* [Representation](/Week_4/NeuralNetworks/NeuralNetworksRepresentation.md)
+	* [Applications](/Week_4/NeuralNetworks/NeuralNetworksApplications.md)
 	* [Solving One-vs-All Classification](/Week_4/Octave_MatlabTutorials/One-vs-AllClassification_Example.md)
 	* [Solving Neural Networks](/Week_4/Octave_MatlabTutorials/NeuralNetworks_Example.md)
+
+---
+
+* [Neural Networks: Learning](/Week_5/NeuralNetworksLearning.md)
+	* [Cost Function and Backpropagation](/Week_5/NeuralNetworksLearning/CostFunctionBackPropagation.md)
+	* [Backpropagation](/Week_5/NeuralNetworksLearning/Backpropagation.md)
+	* [Solving Neural Network](/Week_5/Octave_MatlabTutorials/NeuralNetworks_Example.md)
