@@ -44,4 +44,4 @@
 * [Neural Networks: Learning](/Week_5/NeuralNetworksLearning.md)
 	* [Cost Function and Backpropagation](/Week_5/NeuralNetworksLearning/CostFunctionBackPropagation.md)
 	* [Backpropagation](/Week_5/NeuralNetworksLearning/Backpropagation.md)
-	* [Solving Neural Network](/Week_5/Octave_MatlabTutorials/NeuralNetworks_Example.md)
+	* [Neural Network Learning](/Week_5/Octave_MatlabTutorials/NeuralNetworksLearning_Example.md)
