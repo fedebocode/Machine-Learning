@@ -91,6 +91,8 @@ Compute accuracy on our training set:
 	fprintf('Expected accuracy (approx): 89.0\n');
 	fprintf('\n');
 
+## Functions
+
 __Plot Data__
 
 	function plotData(X, y)

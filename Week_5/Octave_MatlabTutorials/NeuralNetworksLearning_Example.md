@@ -100,6 +100,8 @@ Predict:
     pred = predict(Theta1, Theta2, X);
     fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
 
+## Functions
+
 __Neural Network Cost Function__
 
     function [J grad] = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lambda)
@@ -116,8 +118,9 @@ __Neural Network Cost Function__
 
       X = [ones(m, 1) X];
 
+      % Activations for each layer
       for i=1:m
-        a1 = X(i,:)';             //activations for each layer
+        a1 = X(i,:)';
         z2 = Theta1 * a1;
         a2 = [1; sigmoid(z2)];
         z3 = Theta2 * a2;
@@ -127,7 +130,7 @@ __Neural Network Cost Function__
         yVec = (1:num_labels)' == y(i);
         J = J + sum(-yVec .* log(h) - (1 - yVec) .* log(1 - h));
 
-      //backpropagation:
+      % Backpropagation:
         delta3 = a3 - yVec;
         delta2 = Theta2' * delta3 .* (a2 .* (1 - a2));
         Theta2_grad = Theta2_grad + delta3 * a2';

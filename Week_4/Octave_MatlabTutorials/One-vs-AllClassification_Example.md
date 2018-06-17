@@ -50,6 +50,8 @@ Predict for One Vs All:
 
 	fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
 
+## Functions
+
 __Display Data:__
 
 	function [h, display_array] = displayData(X, example_width)

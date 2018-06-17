@@ -84,6 +84,8 @@ Compute accuracy on our training set:
 	fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
 	fprintf('Expected accuracy (with lambda = 1): 83.1 (approx)\n');
 
+## Functions
+
 __Map Feature__
 
 Returns a new feature array with more features, comprising of X1, X2, X1.^2, X2.^2, X1*X2, X1*X2.^2, etc..

@@ -42,6 +42,8 @@ Predict house value for 1650sq/feet and 3 bedrooms:
 	
 	predict1 = [1 feature_Norm_1 feature_Norm_2] * theta;
 
+## Functions
+
 __Feature Normalize__
 
 	function [X_norm, mu, sigma] = featureNormalize(X)
@@ -50,17 +52,20 @@ __Feature Normalize__
 		mu = zeros(1, size(X, 2));
 		sigma = zeros(1, size(X, 2));
 
-		N = size(X, 2);                                		// number of features
+		% Number of features
+		N = size(X, 2);
 
 		for i=1:N,
+    		% Get ith feature/column
+    		feature = X(:, i);                         		
 
-    		feature = X(:, i);                         		// get ith feature/column
+    		% ith feature mean
+    		mu(i) = mean(feature);  
+    		% ith feature standard deviation                   		
+    		sigma(i) = std(feature);
 
-    		mu(i) = mean(feature);                     		// ith feature mean
-    		sigma(i) = std(feature);                   		// ith feature standard deviation
-
-    		X_norm(:, i) = (feature - mu(i)) / sigma(i); 	// replace normalized feature
-    
+    		% replace normalized feature
+    		X_norm(:, i) = (feature - mu(i)) / sigma(i);   
   			end
 		end
 

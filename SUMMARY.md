@@ -45,3 +45,9 @@
 	* [Cost Function and Backpropagation](/Week_5/NeuralNetworksLearning/CostFunctionBackPropagation.md)
 	* [Backpropagation](/Week_5/NeuralNetworksLearning/Backpropagation.md)
 	* [Neural Network Learning](/Week_5/Octave_MatlabTutorials/NeuralNetworksLearning_Example.md)
+    
+---
+
+* [Evaluating a Learning Algorithm](/Week_6/EvaluatingLearningAlgorithm.md)
+	* [Model Selection and Train/Validation/Test Sets](/Week_6/EvaluatingLearningAlgorithm/ModelSelectionTrainValidationTestSets.md)
+	* [Regularized Linear Regression and Bias vs Variance](/Week_6/Octave_MatlabTutorials/BiasVsVariance.md)

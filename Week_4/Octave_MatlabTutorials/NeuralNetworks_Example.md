@@ -63,6 +63,8 @@ Randomly permute examples:
 ![alt text](/Week_4/Octave_MatlabTutorials/Assets/3.png)
 ![alt text](/Week_4/Octave_MatlabTutorials/Assets/4.png)
 
+## Functions
+
 __Predict__
 
 	function p = predict(Theta1, Theta2, X)
