@@ -51,3 +51,4 @@
 * [Evaluating a Learning Algorithm](/Week_6/EvaluatingLearningAlgorithm.md)
 	* [Model Selection and Train/Validation/Test Sets](/Week_6/EvaluatingLearningAlgorithm/ModelSelectionTrainValidationTestSets.md)
 	* [Regularized Linear Regression and Bias vs Variance](/Week_6/Octave_MatlabTutorials/BiasVsVariance.md)
+	* [Building a Spam Classifier](/Week_6/SpamClassifier/SpamClassifier.md)
