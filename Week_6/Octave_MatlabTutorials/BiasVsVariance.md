@@ -196,7 +196,6 @@ __Plot Fit__
 
 	function plotFit(min_x, max_x, mu, sigma, theta, p)
 
-		% Hold on to the current figure
 		hold on;
 
 		% We plot a range slightly bigger than the min and max values to get
@@ -233,7 +232,6 @@ __Poly Features__
 
 	function [X_poly] = polyFeatures(X, p)
 
-		% You need to return the following variables correctly.
 		X_poly = zeros(numel(X), p);
 
 		X_poly = X;
@@ -246,7 +244,7 @@ __Validation Curve__
 
 	function [lambda_vec, error_train, error_val] = validationCurve(X, y, Xval, yval)
 
-		% Selected values of lambda (you should not change this)
+		% Selected values of lambda
 		lambda_vec = [0 0.001 0.003 0.01 0.03 0.1 0.3 1 3 10]';
 
 		error_train = zeros(length(lambda_vec), 1);
@@ -259,3 +257,22 @@ __Validation Curve__
     		error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
 		end;
 	end
+    
+__Learning Curve__
+
+        function [error_train, error_val] = learningCurve(X, y, Xval, yval, lambda)
+        
+            % Number of training examples
+            m = size(X, 1);
+
+            error_train = zeros(m, 1);
+            error_val   = zeros(m, 1);
+
+            for i = 1:m
+                X_train = X(1:i, :);
+                y_train = y(1:i);
+                theta = trainLinearReg(X_train, y_train, lambda);
+                error_train(i) = linearRegCostFunction(X_train, y_train, theta, 0);
+                error_val(i) = linearRegCostFunction(Xval, yval, theta, 0);
+            end;
+        end
