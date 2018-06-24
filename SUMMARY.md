@@ -54,6 +54,7 @@
 	* [Building a Spam Classifier](/Week_6/SpamClassifier/SpamClassifier.md)
 
 ---
-
+ 
 * [Support Vector Machines (SVM)](/Week_7/SupportVectorMachines.md)
-		* [Support Vector Machines Example](/Week_7/Octave_MatlabTutorials/SupportVectorMachines_Example.md)
+	* [Support Vector Machines Example](/Week_7/Octave_MatlabTutorials/SupportVectorMachines_Example.md)
+	* [Spam Classifier Example](/Week_7/Octave_MatlabTutorials/SpamClassifier_Example.md)
