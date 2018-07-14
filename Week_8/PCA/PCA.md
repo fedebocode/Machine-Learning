@@ -1,6 +1,3 @@
-# Clustering Example
+# Principal Component Analysys (PCA)
 
-![alt text](/Week_8/Octave_MatlabTutorials/Assets/)
-
-### Functions
-
+![alt text](/Week_8/PCA/Assets/)

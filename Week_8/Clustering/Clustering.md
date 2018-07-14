@@ -1,6 +1,5 @@
-# Clustering Example
+# kMeans Clustering
 
-![alt text](/Week_8/Octave_MatlabTutorials/Assets/)
+![alt text](/Week_8/Clustering/Assets/)
 
-### Functions
 

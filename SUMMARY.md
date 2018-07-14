@@ -8,6 +8,10 @@
 
 ---
 
+* Supervised Learning
+
+---
+
 * [Model Representation](/Week_1/ModelRepresentation.md)
 	* [Model and Cost Function](/Week_1/ModelRepresentation/ModelCostFunction.md)
 	* [Parameter Learning](/Week_1/ModelRepresentation/ParameterLearning.md)
@@ -56,5 +60,18 @@
 ---
  
 * [Support Vector Machines (SVM)](/Week_7/SupportVectorMachines.md)
+	* [Support Vector Machines](/Week_7/SupportVectorMachines/SupportVectorMachines.md)
 	* [Support Vector Machines Example](/Week_7/Octave_MatlabTutorials/SupportVectorMachines_Example.md)
-	* [Spam Classifier Example](/Week_7/Octave_MatlabTutorials/SpamClassifier_Example.md)
+	* [Spam Classifier](/Week_7/Octave_MatlabTutorials/SpamClassifier_Example.md)
+
+---
+
+* Unsupervised Learning
+
+---
+
+* [Unsupervised Learning](/Week_8/UnsupervisedLearning.md)
+	* [kMeans Clustering](/Week_8/Clustering/Clustering.md)
+	* [Principal Component Analysis (PCA)](/Week_8/PCA/PCA.md)
+	* [K-means Clustering Example](/Week_8/Octave_MatlabTutorials/Clustering_Example.md)
+	* [PCA Example](/Week_8/Octave_MatlabTutorials/PCA_Example.md)
