@@ -62,7 +62,7 @@
 * [Support Vector Machines (SVM)](/Week_7/SupportVectorMachines.md)
 	* [Support Vector Machines](/Week_7/SupportVectorMachines/SupportVectorMachines.md)
 	* [Support Vector Machines Example](/Week_7/Octave_MatlabTutorials/SupportVectorMachines_Example.md)
-	* [Spam Classifier](/Week_7/Octave_MatlabTutorials/SpamClassifier_Example.md)
+	* [Spam Classifier Example](/Week_7/Octave_MatlabTutorials/SpamClassifier_Example.md)
 
 ---
 
@@ -70,8 +70,23 @@
 
 ---
 
-* [Unsupervised Learning](/Week_8/UnsupervisedLearning.md)
-	* [kMeans Clustering](/Week_8/Clustering/Clustering.md)
+* [Introduction](/Week_8/UnsupervisedLearning.md)
+	* [K-means Clustering](/Week_8/Clustering/Clustering.md)
 	* [Principal Component Analysis (PCA)](/Week_8/PCA/PCA.md)
 	* [K-means Clustering Example](/Week_8/Octave_MatlabTutorials/Clustering_Example.md)
 	* [PCA Example](/Week_8/Octave_MatlabTutorials/PCA_Example.md)
+
+---
+
+* [Anomaly Detection - Recommender System](/Week_9/AnomalyDetection_RecommenderSystems.md)
+	* [Anomaly Detection](/Week_9/AnomalyDetection/AnomalyDetection.md)
+	* [Recommender Systems](/Week_9/RecommenderSystems/RecommenderSystems.md)
+	* [Anomaly Detection - Recommender System Example](/Week_9/Octave_MatlabTutorials/AnomalyDetection_RecommenderSystems_Example.md)
+
+---
+
+* [Large Scale Machine Learning](/Week_10/LargeScaleMachineLearning.md)
+
+---
+
+* [Photo OCR](/Week_11/PhotoOCR.md)
