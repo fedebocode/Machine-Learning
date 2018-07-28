@@ -118,6 +118,6 @@ __Note__: J will __always__ decrease as K is increased. The one exception is if 
 
 Another way to choose K is to observe how well k-means performs on a __downstream purpose__. In other words, you choose K that proves to be most useful for some goal you're trying to achieve from using these clusters.
 
-# Discussion of the drawbacks of K-Means
+# Discussion of the Drawbacks of K-Means
 
 This links to a discussion that shows various situations in which K-means gives totally correct but unexpected results: http://stats.stackexchange.com/questions/133656/how-to-understand-the-drawbacks-of-k-means
