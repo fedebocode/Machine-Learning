@@ -81,12 +81,9 @@
 * [Anomaly Detection - Recommender System](/Week_9/AnomalyDetection_RecommenderSystems.md)
 	* [Anomaly Detection](/Week_9/AnomalyDetection/AnomalyDetection.md)
 	* [Recommender Systems](/Week_9/RecommenderSystems/RecommenderSystems.md)
-	* [Anomaly Detection - Recommender System Example](/Week_9/Octave_MatlabTutorials/AnomalyDetection_RecommenderSystems_Example.md)
+	* [Anomaly Detection Example](/Week_9/Octave_MatlabTutorials/AnomalyDetection_Example.md)
 
 ---
 
 * [Large Scale Machine Learning](/Week_10/LargeScaleMachineLearning.md)
 	* [Learning with Large Datasets](/Week_10/LargeScaleMachineLearning/LargeScaleMachineLearning.md)
----
-
-* [Photo OCR](/Week_11/PhotoOCR.md)

@@ -2,7 +2,20 @@
 %
 %  Instructions
 %  ------------
-
+%
+%  This file contains code that helps you get started on the second part
+%  of the exercise which covers regularization with logistic regression.
+%
+%  You will need to complete the following functions in this exericse:
+%
+%     sigmoid.m
+%     costFunction.m
+%     predict.m
+%     costFunctionReg.m
+%
+%  For this exercise, you will not need to change any code in this file,
+%  or any other files other than those mentioned above.
+%
 
 %% Initialization
 clear ; close all; clc
@@ -80,6 +93,15 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 %% ============= Part 2: Regularization and Accuracies =============
+%  Optional Exercise:
+%  In this part, you will get to try different values of lambda and
+%  see how regularization affects the decision coundart
+%
+%  Try the following values of lambda (0, 1, 10, 100).
+%
+%  How does the decision boundary change when you vary lambda? How does
+%  the training set accuracy vary?
+%
 
 % Initialize fitting parameters
 initial_theta = zeros(size(X, 2), 1);

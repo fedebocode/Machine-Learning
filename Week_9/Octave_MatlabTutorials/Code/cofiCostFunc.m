@@ -52,24 +52,6 @@ J = J + (lambda / 2) * (sumsq(Theta(:)) + sumsq(X(:)));
 X_grad = X_grad + lambda * X;
 Theta_grad = Theta_grad + lambda * Theta;
 
-% =============================================================
-
-grad = [X_grad(:); Theta_grad(:)];
-
-end
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 % =============================================================
 

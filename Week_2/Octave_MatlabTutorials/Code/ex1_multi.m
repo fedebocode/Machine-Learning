@@ -1,5 +1,30 @@
 %% Machine Learning Online Class
 %  Exercise 1: Linear regression with multiple variables
+%
+%  Instructions
+%  ------------
+% 
+%  This file contains code that helps you get started on the
+%  linear regression exercise. 
+%
+%  You will need to complete the following functions in this 
+%  exericse:
+%
+%     warmUpExercise.m
+%     plotData.m
+%     gradientDescent.m
+%     computeCost.m
+%     gradientDescentMulti.m
+%     computeCostMulti.m
+%     featureNormalize.m
+%     normalEqn.m
+%
+%  For this part of the exercise, you will need to change some
+%  parts of the code below for various experiments (e.g., changing
+%  learning rates).
+%
+
+%% Initialization
 
 %% ================ Part 1: Feature Normalization ================
 
@@ -32,6 +57,28 @@ X = [ones(m, 1) X];
 
 %% ================ Part 2: Gradient Descent ================
 
+% ====================== YOUR CODE HERE ======================
+% Instructions: We have provided you with the following starter
+%               code that runs gradient descent with a particular
+%               learning rate (alpha). 
+%
+%               Your task is to first make sure that your functions - 
+%               computeCost and gradientDescent already work with 
+%               this starter code and support multiple variables.
+%
+%               After that, try running gradient descent with 
+%               different values of alpha and see which one gives
+%               you the best result.
+%
+%               Finally, you should complete the code at the end
+%               to predict the price of a 1650 sq-ft, 3 br house.
+%
+% Hint: By using the 'hold on' command, you can plot multiple
+%       graphs on the same figure.
+%
+% Hint: At prediction, make sure you do the same feature normalization.
+%
+
 fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
@@ -54,8 +101,13 @@ fprintf(' %f \n', theta);
 fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
+% ====================== YOUR CODE HERE ======================
+% Recall that the first column of X is all-ones. Thus, it does
+% not need to be normalized.
+price = 0; % You should change this
 
-price = [1 (1650-mu(1))/sigma(1) (3-mu(2))/sigma(2)]*theta;
+
+% ============================================================
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using gradient descent):\n $%f\n'], price);
@@ -66,6 +118,16 @@ pause;
 %% ================ Part 3: Normal Equations ================
 
 fprintf('Solving with normal equations...\n');
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: The following code computes the closed form 
+%               solution for linear regression using the normal
+%               equations. You should complete the code in 
+%               normalEqn.m
+%
+%               After doing so, you should complete this code 
+%               to predict the price of a 1650 sq-ft, 3 br house.
+%
 
 %% Load Data
 data = csvread('ex1data2.txt');
@@ -86,28 +148,12 @@ fprintf('\n');
 
 
 % Estimate the price of a 1650 sq-ft, 3 br house
+% ====================== YOUR CODE HERE ======================
+price = 0; % You should change this
 
-price = [1 1650 3]*theta;
+
+% ============================================================
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using normal equations):\n $%f\n'], price);
 
-         fprintf('Plotting Training and regressioned results by solving normal equation.\n');
-figure;
-plot3(X(:,2),X(:,3),y,"o");
-xlabel('sq-ft of room');
-ylabel('#bedroom');
-zlabel('price');
-grid;
-hold on;
-xx = linspace(0,5000,25);
-yy = linspace(1,5,25);
-zz = zeros(size(xx,2),size(yy,2));
-for i=1:size(xx,2)
-for j=1:size(yy,2)
-  zz(i,j) = [1 xx(i) yy(j)]*theta;
-end
-end
-mesh(xx,yy,zz);
-title('Result of Solving Normal Equation');
-legend('Training data', 'Linear regression');
