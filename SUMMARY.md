@@ -87,3 +87,7 @@
 
 * [Large Scale Machine Learning](/Week_10/LargeScaleMachineLearning.md)
 	* [Learning with Large Datasets](/Week_10/LargeScaleMachineLearning/LargeScaleMachineLearning.md)
+
+---
+
+* [Photo OCR](/Week_11/PhotoOCR.md)
